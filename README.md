@@ -182,6 +182,8 @@ Separate Chaining: in separate chaining, each bucket is independent, and contain
 
 ### Greedy Algorithms
 
+***
+
 - Greedy Algorithms are algorithms that make locally optimal choices at each step in the hope of eventually reaching the globally optimal solution
 
 Problems must exhibit two properties in order to implement a Greedy solution:
