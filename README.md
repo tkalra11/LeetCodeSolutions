@@ -246,3 +246,31 @@ Bitmasking is a technique used to perform operations at the bit level. Leveragin
 
      Theta Notation is used to provide a bound on a particular algorithm such that it can be "sandwiched" between two constants (one for an upper limit and one for a lower limit) for sufficiently large values
       
+
+## Tricks :
+ 
+- Get no of digits using
+      
+      (int)(Math.log10(number))+1
+
+- Fastest way to get gcd 
+
+      static int gcd(int a, int b)
+        {
+        // if b=0, a is the GCD
+        if (b == 0)
+            return a;
+ 
+        // call the gcd() method recursively by
+        // replacing a with b and b with
+        // modulus(a,b) as long as b != 0
+        else
+            return gcd(b, a % b);
+        }
+- For better binary search use
+
+      mid = start + (end-start) / 2
+
+  instead of 
+
+      mid = (start+end) / 2
